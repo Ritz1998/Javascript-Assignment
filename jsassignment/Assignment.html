@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Program to find the Highest element in array
+
+let array=['20','120','111','215','54','78'].sort(function(a, b) 
+{ return b - a; })[1];
+    
+console.log(array);    
+
+
+
+        //   program to find out prime number in array
+
+          var numArray = [10,17,24,47,97,94]
+
+        numArray = numArray.filter((number) => {
+        for (var i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) return false;
+        }
+        return true;
+});
+
+console.log(numArray);
+
+    //Write a function which takes an array and returns the sum of max, 
+    //min values in that array, finally attach this to a prototype object.  
+
+ 
+    function Sum(){
+       
+        var array=[12,25,41,2]
+       
+             
+            var min=array.sort((a,b)=>a-b)[0];
+            var max=array.sort((a,b)=>b-a)[0];
+            
+
+            return min+max;
+}
+
+
+ console.log( Sum())
+
+
+ 
+       //Write a program to find the sum of two arrays
+
+
+ function sum(){
+     let array1=[2,8,6,7,9];
+   
+     let array2=[6,4,6,8,7];
+    sum1= array1.reduce((pre,current)=>pre+current);
+    sum2=array2.reduce((pre,current)=>pre+current)
+    console.log(sum1)
+    // console.log(sum2)
+    Total=sum1+sum2
+    return Total
+
+ }
+ console.log(sum())
+
+            //Arrange the number into descending order
+           
+            var array=[12,25,41,2]
+
+            var descendingorder=array.sort((a,b)=>b-a)
+            console.log(descendingorder)
+    
+          
+            //Write a program for addition of each index of two array 
+
+        let array1=[2,8,6,7,9];
+        let array2=[6,4,6,8,7];
+        var sum1=0;
+        var sum2=0;
+        var total=0;
+
+
+        function addindex(){
+        let  indexofarray1= array1.forEach((value,index)=>{
+            // console.log(index)
+            // console.log(value)
+            sum1=sum1+index
+            
+        })
+        // console.log(sum)
+        let  indexofarray2= array2.forEach((value,index)=>{
+                //   console.log(index)
+                sum2=sum2+index
+            })
+           return sum1+sum2
+        }
+        console.log(addindex())
+
+
+//  /* Problem: 
+
+// arr=[1,7,-6,15,7,9,0,2,-3]
+
+// Seq=[7,15,-3]
+
+// Return true if the sequence is present in array in the same order else return false*/
+
+//         // arr=[1,7,-6,15,7,9,0,2,-3]
+
+//         // Seq=[7,15,-3]
+
+//         // newarray=arr.join('');
+
+//         // sequence=Seq.join('');
+
+//         // final=  newarray.includes(sequence)
+//         // console.log(final)
+
+          
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+//    a=Math.max(12,45,66,78)
+//    console.log(a)
+//    console.log (Sum(22,55,66))   
+    
+        
+
+
+
+
+    </script>
+</body>
+</html>
